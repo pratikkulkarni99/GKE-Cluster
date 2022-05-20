@@ -14,7 +14,7 @@ resource "google_container_node_pool" "general" {
 
   node_config {
     preemptible = false
-    machine_type = "ec2-small"
+    machine_type = "e2-small"
 
     labels ={
       role ="general"
