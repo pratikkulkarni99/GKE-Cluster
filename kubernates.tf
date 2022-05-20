@@ -5,7 +5,7 @@ resource "google_container_cluster" "primary"{
   initial_node_count = 1
   network =google_compute_network.main.self_link
   subnetwork =google_compute_subnetwork.private.self_link
-  logging_service = "logging.googleapis.com/kubernates none"
+  logging_service = "logging.googleapis.com/kubernetes "
 
   addons_config {
     http_load_balancing {
