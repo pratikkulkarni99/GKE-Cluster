@@ -6,7 +6,6 @@ resource "google_container_cluster" "primary"{
   network =google_compute_network.main.self_link
   subnetwork =google_compute_subnetwork.private.self_link
   logging_service = "logging.googleapis.com/kubernates"
-  network_mode ="VPC_NATICE"
 
   addons_config {
     http_load_balancing {
